@@ -12,12 +12,12 @@ public class ReportValidator {
 
         String title_error = _validateTitle(r.getTitle());
         if(!title_error.equals("")){
-            errors.add("title_error");
+            errors.add(title_error);
         }
 
         String content_error = _validateContent(r.getContent());
         if(!content_error.equals("")){
-            errors.add("content_error");
+            errors.add(content_error);
         }
 
         return errors;
